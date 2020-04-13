@@ -5,8 +5,9 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import Login from "./Component/login.component";
 import SignUp from "./Component/signup.component";
-import Home from "./Component/home";
-import Conditions from "./Component/conditions";
+import Maps from "./Maps/maps";
+import Conditions from "./Maps/conditions";
+import Weather from "./Weather/weather";
 
 // import fire from './config/Fire';
 
@@ -26,22 +27,27 @@ function App() {
                 <Link className="nav-link" to={"/sign-up"}>Sign up</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to={"/Home"}>Maps</Link>
-                </li>
+                <Link className="nav-link" to={"/weather"}>Weather</Link>
+              </li>
               <li className="nav-item">
                 <Link className="nav-link" to={"/conditions"}>Trail Conditions</Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to={"/Maps"}>Maps</Link>
+                </li>
             </ul>
           </div>
         </div>
       </nav>
 
-      <div className="auth-wrapper">
+      <div className="good-wrap">
         <div className="auth-inner">
           <Switch>
             <Route exact path='/' component={Login} />
-            <Route path="/home" component={Home} />
+            <Route path="/sign-up" component={SignUp} />
             <Route path="/sign-in" component={Login} />
+            <Route path="/weather" component={Weather}/>
+            <Route path="/Maps" component={Maps} />
             <Route path="/sign-up" component={SignUp} />
             <Route path="/conditions" component={Conditions} />
           </Switch>

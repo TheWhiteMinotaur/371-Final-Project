@@ -3,10 +3,11 @@
 * {
   box-sizing: border-box;
 }
+
 body {
-  background: #1C8EF9 !important;
+  background: rgb(1, 213, 250) !important;
   min-height: 100vh;
-  display: flex;
+  display: flex; 
   font-weight: 400;
   font-family: 'Fira Sans', sans-serif;
 }
@@ -24,6 +25,7 @@ body, html, .App, #root, .auth-wrapper {
 .navbar-light {
   background-color: #ffffff;
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding-bottom: 100px;
 }
 
 .auth-wrapper {
@@ -33,7 +35,29 @@ body, html, .App, #root, .auth-wrapper {
   text-align: left;
 }
 
-.auth-inner {
+/* Houses the full wrap from App.js */
+.good-wrap{
+  height: 28%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+/* Creates the border and laylout for the Map */
+.map-component {
+  width: 75%;
+  height: 540%;
+  margin: auto;
+  background: #000000;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 30px 35px 35px 35px;
+  border-radius: 15px;
+  transition: all .3s;
+}
+
+/* .auth-inner {
   width: 450px;
   margin: auto;
   background: #ffffff;
@@ -41,14 +65,14 @@ body, html, .App, #root, .auth-wrapper {
   padding: 40px 55px 45px 55px;
   border-radius: 15px;
   transition: all .3s;
-}
+} */
 
-.auth-wrapper .form-control:focus {
-  border-color: #167bff;
+.auth-wrapper .form-control:focus .good-wrap {
+  border-color: rgb(1, 213, 250) !important;
   box-shadow: none;
 }
 
-.auth-wrapper h3 {
+.auth-wrapper h3 .good-wrap{
   text-align: center;
   margin: 0;
   line-height: 1;
@@ -68,6 +92,6 @@ body, html, .App, #root, .auth-wrapper {
   margin: 0;
 }
 
-.forgot-password a {
-  color: #167bff;
+.forgot-password a{
+  color: rgb(1, 213, 250) !important;
 }
