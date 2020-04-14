@@ -3,24 +3,20 @@ import Iframe from 'react-iframe'
 
 class Weather extends Component {
   render() {
-      return(
-
-        <div className="App">
-            <header className="App-header">
-                <p>
-                Edit<code>src/weather.html</code> and save to reload
-                </p>
-                <a
-                className="App-link"
-                href="https://reactjs.org"
-                target="_blank"
-                rel="noopener noreferrer"
-                >
-                    Learn react
-                </a>
-            </header>
+    return (
+      <div className="weather-component">
+      <Iframe src="weather.html"
+        width="100%"
+        height="100%"
+        frameBorder="0"
+        scrolling="auto"
+        id="myId"
+        className="myClassname"
+        display="initial"
+        position="relative"/>
         </div>
-    )
+
+        )
   }
 }
 

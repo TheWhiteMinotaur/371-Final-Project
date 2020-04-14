@@ -37,7 +37,8 @@ body, html, .App, #root, .auth-wrapper {
 
 /* Houses the full wrap from App.js */
 .good-wrap{
-  height: 28%;
+  margin-top: 5%;
+  height: 85%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -45,9 +46,14 @@ body, html, .App, #root, .auth-wrapper {
   text-align: left;
 }
 
+/* Possibly useless */
+.NewGroup, h3, .weather-component{
+  text-align: center;
+}
+
 /* Creates the border and laylout for the Map */
 .map-component {
-  width: 75%;
+  width: 90%;
   height: 540%;
   margin: auto;
   background: #000000;
@@ -57,7 +63,26 @@ body, html, .App, #root, .auth-wrapper {
   transition: all .3s;
 }
 
-/* .auth-inner {
+.weather-component {
+  width: 100%;
+  height: 100%;
+}
+
+/* Stylizes The signup pages */
+.auth-signup {
+  height: 50%;
+  width: 30%;
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 40px 55px 45px 55px;
+  border-radius: 15px;
+  transition: all .3s;
+}
+
+/* Stylizes the login page */
+.auth-login {
+  height: 38%;
   width: 450px;
   margin: auto;
   background: #ffffff;
@@ -65,7 +90,7 @@ body, html, .App, #root, .auth-wrapper {
   padding: 40px 55px 45px 55px;
   border-radius: 15px;
   transition: all .3s;
-} */
+}
 
 .auth-wrapper .form-control:focus .good-wrap {
   border-color: rgb(1, 213, 250) !important;

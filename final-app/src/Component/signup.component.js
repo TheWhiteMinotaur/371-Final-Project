@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 
 
+
 export default class SignUp extends Component {
     render() {
         return (
+            <div className="auth-signup">
             <form>
                 <h3>Sign Up</h3>
 
@@ -32,6 +34,7 @@ export default class SignUp extends Component {
                     Already registered <a href="#">sign in?</a>
                 </p>
             </form>
+            </div>
         );
     }
 }

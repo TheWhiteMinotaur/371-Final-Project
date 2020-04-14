@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
@@ -8,8 +8,6 @@ import SignUp from "./Component/signup.component";
 import Maps from "./Maps/maps";
 import Conditions from "./Maps/conditions";
 import Weather from "./Weather/weather";
-
-// import fire from './config/Fire';
 
 
 function App() {
@@ -41,7 +39,6 @@ function App() {
       </nav>
 
       <div className="good-wrap">
-        <div className="auth-inner">
           <Switch>
             <Route exact path='/' component={Login} />
             <Route path="/sign-up" component={SignUp} />
@@ -51,7 +48,6 @@ function App() {
             <Route path="/sign-up" component={SignUp} />
             <Route path="/conditions" component={Conditions} />
           </Switch>
-        </div>
       </div>
     </div></Router>
   );
