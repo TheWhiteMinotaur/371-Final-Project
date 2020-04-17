@@ -8,7 +8,22 @@ import SignUp from "./Component/signup.component";
 import Maps from "./Maps/maps";
 import Conditions from "./Maps/conditions";
 import Weather from "./Weather/weather";
+import fire from "./config/Fire"
 
+
+function componentDidMount(){
+  this.authListener();
+}
+
+ function authListener(){
+  fire.auth().onAuthStateChanged((user)=>{
+    if(user){
+      this.setState({user});
+    }else{
+      this.setState({user: null});
+    }
+  });
+}
 
 function App() {
   return (<Router>
