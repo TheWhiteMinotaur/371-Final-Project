@@ -5,7 +5,7 @@
 }
 
 body {
-  background: rgb(1, 213, 250) !important;
+  background: #01d5fa !important;
   min-height: 100vh;
   display: flex; 
   font-weight: 400;
@@ -92,8 +92,81 @@ body, html, .App, #root, .auth-wrapper {
   transition: all .3s;
 }
 
+.northwest{
+  text-align: left;
+  float:left;
+  font-size: 25px;
+}
+
+.eastern{
+  text-align: left;
+  float: left;
+  margin-left: 40px;
+  font-size: 25px;
+
+}
+
+.central{
+  text-align: left;
+  float:right;
+  font-size: 25px;
+
+}
+
+a:link{
+  font-size: 15px;
+  color: black;
+}
+
+a:visited {
+  color: rgba(0, 0, 0, 0.678);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #01d5fa;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #01d5fa;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+/* Stylizes the login page */
+.conditions {
+  height: 48%;
+  width: 700px;
+  margin: auto;
+  background-color: #ffffff;
+  background: url(snowmobile.png);
+  background-size: 40%;
+  background-position: bottom 0% right 0%;
+  background-repeat: no-repeat;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 40px 55px 45px 55px;
+  border-radius: 15px;
+  transition: all .3s;
+}
+
+.auth-logout {
+  height: 38%;
+  width: 450px;
+  text-align: center;
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 40px 55px 45px 55px;
+  border-radius: 15px;
+  transition: all .3s;
+}
+
 .auth-wrapper .form-control:focus .good-wrap {
-  border-color: rgb(1, 213, 250) !important;
+  border-color: #01d5fa;
   box-shadow: none;
 }
 

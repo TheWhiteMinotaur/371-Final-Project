@@ -5,6 +5,7 @@ export default class Login extends Component {
     constructor(props){
         super(props);
         this.login=this.login.bind(this);
+        this.logout=this.logout.bind(this);
         this.handleChange=this.handleChange.bind(this);
         this.signup=this.signup.bind(this);
         this.state={
@@ -33,6 +34,10 @@ export default class Login extends Component {
         this.setState({[e.target.name]: e.target.value});
     }
 
+    logout(){
+        fire.auth().signOut();
+    }
+
     render() {
         return (
             <div className="auth-login">
@@ -55,9 +60,9 @@ export default class Login extends Component {
                     </div>
                 </div>
 
-                <button onClick={this.signup} type="submit" className="btn btn-info btn-block">Sign Up</button>
+                <button onClick={this.login} type="submit" className="btn btn-info btn-block">Log In</button>
                 <p className="forgot-password text-right">
-                    Forgot <a href="https://www.w3schools.com">password?</a>
+                    Forgot <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">password?</a>
                 </p>
             </form>
             </div>

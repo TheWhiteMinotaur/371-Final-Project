@@ -1,4 +1,4 @@
-import React, { PureComponent, Component } from 'react';
+import React  from 'react';
 import Iframe from 'react-iframe'
 
 class Maps extends React.Component {
