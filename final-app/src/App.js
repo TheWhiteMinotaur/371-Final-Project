@@ -14,7 +14,6 @@ import fire from "./config/Fire"
 
 
 class App extends React.Component {
-
   state = {
     loggedIn: false,
   };
@@ -24,7 +23,6 @@ class App extends React.Component {
     this.state = {
       user: {},
     }
-
   }
 
   componentDidMount() {

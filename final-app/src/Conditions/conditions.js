@@ -6,7 +6,7 @@ class Conditions extends React.Component {
     render() {
         return (
             <div className="conditions">
-                <h3><u>Trail conditions for cities listed below</u></h3>
+                <div className="h3"><u>Trail conditions for cities listed below</u></div>
                 <div className="northwest">
                     <h7>North-West Lower</h7>
                     <li>

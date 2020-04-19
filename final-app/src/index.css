@@ -48,7 +48,7 @@ body, html, .App, #root, .auth-wrapper {
 }
 
 /* Possibly useless */
-.NewGroup, h3, .weather-component{
+.NewGroup, .weather-component{
   text-align: center;
 }
 
@@ -111,14 +111,19 @@ h7{
 
 .home{
   text-align: center;
-  margin-right: 13vw;
-  margin-left: 13vw;
+  margin-right: 10vw;
+  margin-left: 10vw;
+  margin-top: 20vh;
   background: #ffffff;
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-  padding: 40px 55px 45px 55px;
+  padding: 5px 5px 5px 5px;
   border-radius: 15px;
   transition: all .3s;
 
+}
+
+.description{
+  text-align: left;
 }
 
 
@@ -164,6 +169,11 @@ a:active {
   color: #01d5fa;
   background-color: transparent;
   text-decoration: underline;
+}
+
+.h3{
+  font-size: 3vh;
+  text-align: center;
 }
 
 
