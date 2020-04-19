@@ -39,7 +39,7 @@ export default class SignUp extends Component {
 
     render() {
         return (
-            <div className="auth-login">
+            <div className="auth-signup">
             <form>
                 <h3>Sign Up</h3>
 
