@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import Iframe from 'react-iframe'
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 
 class Conditions extends React.Component {
@@ -8,7 +6,7 @@ class Conditions extends React.Component {
     render() {
         return (
             <div className="conditions">
-                <h3>Trail conditions for cities listed below</h3>
+                <h3><u>Trail conditions for cities listed below</u></h3>
                 <div className="northwest">
                     <h7>North-West Lower</h7>
                     <li>

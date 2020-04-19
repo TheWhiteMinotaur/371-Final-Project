@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import fire from "../config/Fire";
+import { Link, useHistory } from "react-router-dom";
+
+
+
 
 export default class Loout extends Component {
     constructor(props){
@@ -46,8 +50,9 @@ export default class Loout extends Component {
 
 
                 <h6>Thank you for stopping by!</h6>
-
-                <button onClick={this.logout} type="submit" className="btn btn-info btn-block">Logout</button>
+                <Link to="/home">
+                <button onClick={this.logout} type="submit" className="btn btn-info btn-block">Logout </button>
+                </Link>
                
             </form>
             </div>
